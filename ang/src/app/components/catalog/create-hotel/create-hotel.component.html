@@ -1,0 +1,35 @@
+<div class="row">
+  <div class="col-lg-6">
+    <div class="bs-component">
+      <form [formGroup]="form" (ngSubmit)="createHotel()">
+
+          <fieldset>
+            <label>
+              Name
+              <input  formControlName="name" type="text" placeholder="enter name"  id="inputValid">
+            </label>
+            <label>
+              City
+              <input  formControlName="city" type="text" placeholder="enter city" id="inputValid">
+            </label>
+            <label>
+              Price
+              <input  formControlName="price" type="number" placeholder="enter price"  id="inputValid">
+            </label>
+            
+            <label>
+              Image
+              <input  formControlName="image" type="text" placeholder="enter image url"   id="inputValid">
+            </label>
+            
+            <label>
+              Description
+              <textarea formControlName="description" placeholder="some text" id="exampleTextarea" rows="3"></textarea>
+            </label>
+
+          </fieldset>
+          <button type="submit" >Create Hotel</button>
+      </form>
+    </div>
+  </div>
+</div>

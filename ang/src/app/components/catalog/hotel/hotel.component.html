@@ -1,0 +1,9 @@
+ <div>
+    <h3 >{{hotel.model}}</h3>
+    <div >
+      <h5 >Price: {{hotel.price}}$</h5>
+    </div>
+ <img style="height: 200px; width: 30%; display: block;" src="{{hotel.image}}" alt="Card image"> 
+ <a routerLink="/hotel/{{hotel._id}}">Details</a>
+    <router-outlet></router-outlet>
+

@@ -1,0 +1,28 @@
+
+  <header>
+    <ul>
+      <li>
+        <a *ngIf="!isUserLoggedIn" routerLink="/">Home</a>
+      </li>
+      <li *ngIf="!isUserLoggedIn">
+        <a  routerLink='/login'>Login</a>
+      </li>
+      <li *ngIf="!isUserLoggedIn" >
+        <a  routerLink='/register'>Register</a>
+      </li>
+      <li *ngIf="isUserLoggedIn">
+        <a class="logout"   (click)="logout()">Logout</a>
+      </li>
+      <li>
+        <a *ngIf="isUserLoggedIn" routerLink="/catalog">Hotels</a>
+      </li>
+      <li *ngIf="isUserLoggedIn" >
+        <a routerLink="/create/hotel">Add hotel</a>
+      </li>
+      <li >
+        <a routerLink="/about">About</a>
+      </li>
+    </ul>
+  </header>
+  <router-outlet></router-outlet>
+

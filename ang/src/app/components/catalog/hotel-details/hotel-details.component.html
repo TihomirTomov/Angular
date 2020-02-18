@@ -1,0 +1,19 @@
+
+
+<div *ngIf="hotel"  >
+<h3 >{{hotel.name}}</h3>                
+      <img  [src]="hotel.image">
+      <ul>
+        <li><h5>Price:  </h5>
+          <span >{{hotel.price}}$ </span>
+        </li>
+        <li > <h5>City: {{hotel.city}} </h5>
+        </li>   
+      </ul>
+      <p >{{hotel.description}}</p>
+
+  </div>
+ 
+  <a class="delete" (click)=delete() >Delete</a>
+  
+  

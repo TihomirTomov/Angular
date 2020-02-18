@@ -1,0 +1,26 @@
+<form [formGroup]="form" (ngSubmit)="register()">
+  <div >
+    <fieldset>
+      <h2>Register</h2>
+      <div >
+        <label for="exampleInputEmail1">User Name</label>
+        <input formControlName="username" type="text"  id="exampleInputEmail1"
+          placeholder="Enter username"> 
+      </div>
+      <div >
+        <label for="exampleInputPassword">Password</label>
+        <input formControlName="password" type="password"  id="exampleInputPassword"
+          placeholder="Password">
+              
+      </div>
+      <div >
+        <label for="exampleInputPassword1">re-Password</label>
+        <input formControlName="rePassword" type="password"  id="exampleInputPassword1"
+          placeholder="re-Password">
+          
+        
+      </div>
+    </fieldset>
+    <button type="submit" class="btn btn-secondary">Register!</button>
+  </div>
+</form>
